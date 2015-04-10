@@ -1,7 +1,7 @@
 ChargifyBundle
 ==============
 
-This bundle provides integration with Chargify for Symfony 2 bsed on this Library https://github.com/johannez/chargify
+This bundle provides integration with Chargify for Symfony 2, I based it on this Library https://github.com/johannez/chargify
 
 ## Requires Guzzle
 I have used https://github.com/misd-service-development/guzzle-bundle with this bundle to handle the actual HTTP requests.
