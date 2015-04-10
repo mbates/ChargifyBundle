@@ -1,0 +1,13 @@
+services:
+    chargify.guzzle.client:
+        class: %guzzle.client.class%
+        tags:
+            - { name: guzzle.client }
+        calls:
+            - [setBaseUrl, [%chargify_domain%]]
+        argument: %chargify_domain%
+    chargify.customer:
+        class: Mbates\ChargifyBundle\Controller\CustomerController
+        arguments:
+            - '@chargify.guzzle.client'
+            - '%chargify_apikey%'
